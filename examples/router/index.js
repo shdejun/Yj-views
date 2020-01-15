@@ -19,6 +19,16 @@ export default new Router({
       path: '/start',
       name: 'start',
       component: r => require.ensure([], () => r(require('../docs/start.md')))
+    },
+    {
+      path: '/button',
+      name: 'button',
+      component: r => require.ensure([], () => r(require('../docs/button.md')))
+    },
+    {
+      path: '/actionSheet',
+      name: 'actionSheet',
+      component: r => require.ensure([], () => r(require('../docs/actionSheet.md')))
     }
   ]
 })

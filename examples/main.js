@@ -3,9 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-// import yj  from '../packages/index'
+import demoBlock from './components/demo-block.vue'
+import plugin  from '../packages/index'
+Vue.component('demo-block', demoBlock)
 Vue.config.productionTip = false
-// Vue.use(yj)
+Vue.use(plugin)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

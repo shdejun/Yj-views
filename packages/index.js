@@ -1,12 +1,14 @@
 import plateNumber from './plateNumber/index'
+import yjButton from './buttton/index'
+import actionSheet from './actionSheet/index'
 const components = {
-  plateNumber
+  yjButton,
+  actionSheet
+  // plateNumber
 }
-// const install = (Vue,Opt)=>{
-//   // Object.keys(components).forEach(cpt=>{Vue.components(cpt.normalize,cpt)})
-// }
 const install = Vue => {
-  Object.keys(components).forEach(cpt=>{Vue.component(cpt.normalize,cpt)})
+  //注册全局组件
+  Object.keys(components).forEach(cpt=>{Vue.component(components[cpt].name,components[cpt])})
 }
 export default {
   install
