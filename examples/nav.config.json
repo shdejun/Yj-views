@@ -23,6 +23,11 @@
       "name":"actionSheet",
       "path":"/actionSheet",
       "desc":"actionSheet上拉菜单"
+    },
+    {
+      "name":"dialog",
+      "path":"/dialog",
+      "desc":"dialog对话框"
     }
   ]
 }

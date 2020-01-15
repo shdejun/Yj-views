@@ -29,6 +29,11 @@ export default new Router({
       path: '/actionSheet',
       name: 'actionSheet',
       component: r => require.ensure([], () => r(require('../docs/actionSheet.md')))
+    },
+    {
+      path: '/dialog',
+      name: 'dialog',
+      component: r => require.ensure([], () => r(require('../docs/dialog.md')))
     }
   ]
 })

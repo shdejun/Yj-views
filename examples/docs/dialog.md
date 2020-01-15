@@ -3,11 +3,7 @@
 ### 基本用法
 ---
 <div class="demon-block">
-  <yj-button @click.native="handlerActionSheet" type="primary" >弹出菜单</yj-button>
-  <div style="width:376px;height:640px;border-radius:20px;overflow: hidden;border:1px solid #000;textAlign:center;position: relative;">
-    这是个iphoneX 哈哈！
-    <action-sheet v-model="show" :title="title" @onSelected="onSelected"></action-sheet>
-  </div>
+  <div>这是个对话框</div>
 </div>
 <script>
 export default {

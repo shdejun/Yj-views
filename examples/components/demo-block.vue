@@ -1,9 +1,6 @@
 <template>
   <div class="docs-demo-wrapper">
-    <div v-if="$example" class="demo-block">
-      <slot name="desc"></slot>
-    </div>
-      <div v-if="!$example" :style="{height: 'auto'}" class="demo-container">
+      <div :style="{height: isExpand ? 'auto' : '0'}" class="demo-container">
         <div span="14">
           <div class="docs-demo docs-demo--expand">
             <div class="highlight-wrapper">
@@ -12,6 +9,7 @@
           </div>
         </div>
       </div>
+    <span class="docs-trans docs-demo-triangle" @click="toggle">{{isExpand ? '隐藏代码' : '显示代码'}}</span>
   </div>
 </template>
 
@@ -21,17 +19,18 @@
   export default {
     data() {
       return {
-
+        isExpand: false
       };
     },
     methods: {
-
+      toggle() {
+        this.isExpand = !this.isExpand;
+      }
     }
   };
 </script>
 
 <style lang="scss">
-
   .demo-container {
     transition: max-height .3s ease;
     overflow: hidden;
@@ -59,58 +58,47 @@
     padding: 10px 0;
     background-color: #FAFBFC;
   }
-
   .docs-demo-code,
   .highlight-wrapper,
   .docs-demo-meta {
     padding: 0 20px;
     overflow-y: auto;
   }
-
   .docs-demo-code {
     border-bottom: 1px solid #eee;
   }
   .docs-demo.docs-demo--expand .docs-demo-meta {
     border-bottom: 1px dashed #e9e9e9;
   }
-
   .docs-demo.docs-demo--expand .docs-demo-triangle {
     transform: rotate(180deg);
   }
-
   .highlight-wrapper {
     display: none;
-
     p,
     pre {
       margin: 0;
     }
-
     .hljs {
       padding: 0;
     }
   }
-
   .docs-demo.docs-demo--expand .highlight-wrapper {
     display: block;
   }
-
   .docs-demo-code-mobi {
     height: 620px;
     margin: 20px 0;
   }
-
   .docs-demo-code-mobi-header {
     border-radius: 4px 4px 0 0;
     background: -webkit-linear-gradient(rgba(55,55,55,.98),#545456);
     background: linear-gradient(rgba(55,55,55,.98),#545456);
     text-align: center;
     padding: 8px;
-
     img {
       width: 100%;
     }
-
     .url-box {
       height: 28px;
       line-height: 28px;
@@ -123,7 +111,6 @@
       overflow-x: auto;
     }
   }
-
   .docs-demo-code-mobi-content {
     iframe {
       width: 100%;
@@ -132,4 +119,3 @@
     }
   }
 </style>
-
