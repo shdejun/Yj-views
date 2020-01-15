@@ -1,11 +1,4 @@
-webpackJsonp([6],{
-
-/***/ "/bKv":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
+webpackJsonp([7],{
 
 /***/ "01QC":
 /***/ (function(module, exports) {
@@ -28,7 +21,7 @@ webpackJsonp([6],{
 
 /***/ }),
 
-/***/ "DGDz":
+/***/ "6NPY":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -59,7 +52,7 @@ webpackJsonp([6],{
 /***/ "ffz/":
 /***/ (function(module, exports) {
 
-module.exports = {"开发指南":[{"name":"introduce","path":"/introduce","desc":"介绍"},{"name":"start","path":"/start","desc":"快速上手"}],"基础组件":[{"name":"button","path":"/button","desc":"button按钮"}],"弹窗提示":[{"name":"actionSheet","path":"/actionSheet","desc":"actionSheet上拉菜单"}]}
+module.exports = {"开发指南":[{"name":"introduce","path":"/introduce","desc":"介绍"},{"name":"start","path":"/start","desc":"快速上手"}],"基础组件":[{"name":"button","path":"/button","desc":"button按钮"}],"弹窗提示":[{"name":"actionSheet","path":"/actionSheet","desc":"actionSheet上拉菜单"},{"name":"dialog","path":"/dialog","desc":"dialog对话框"}]}
 
 /***/ }),
 
@@ -286,7 +279,7 @@ vue_esm["a" /* default */].use(vue_router_esm["a" /* default */]);
     path: '/button',
     name: 'button',
     component: function component(r) {
-      return __webpack_require__.e/* require.ensure */(3).then((function () {
+      return __webpack_require__.e/* require.ensure */(4).then((function () {
         return r(__webpack_require__("VS29"));
       }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
     }
@@ -294,8 +287,16 @@ vue_esm["a" /* default */].use(vue_router_esm["a" /* default */]);
     path: '/actionSheet',
     name: 'actionSheet',
     component: function component(r) {
-      return __webpack_require__.e/* require.ensure */(4).then((function () {
+      return __webpack_require__.e/* require.ensure */(5).then((function () {
         return r(__webpack_require__("SU/S"));
+      }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+    }
+  }, {
+    path: '/dialog',
+    name: 'dialog',
+    component: function component(r) {
+      return __webpack_require__.e/* require.ensure */(3).then((function () {
+        return r(__webpack_require__("dbIc"));
       }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
     }
   }]
@@ -316,25 +317,29 @@ vue_esm["a" /* default */].use(vue_router_esm["a" /* default */]);
 //
 //
 //
-//
-//
 
 /* eslint-disable */
 
 /* harmony default export */ var demo_block = ({
   data: function data() {
-    return {};
+    return {
+      isExpand: false
+    };
   },
-  methods: {}
+  methods: {
+    toggle: function toggle() {
+      this.isExpand = !this.isExpand;
+    }
+  }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-4e7a0293","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./examples/components/demo-block.vue
-var demo_block_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"docs-demo-wrapper"},[(_vm.$example)?_c('div',{staticClass:"demo-block"},[_vm._t("desc")],2):_vm._e(),_vm._v(" "),(!_vm.$example)?_c('div',{staticClass:"demo-container",style:({height: 'auto'})},[_c('div',{attrs:{"span":"14"}},[_c('div',{staticClass:"docs-demo docs-demo--expand"},[_c('div',{staticClass:"highlight-wrapper"},[_vm._t("highlight")],2)])])]):_vm._e()])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-2d5a88bf","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./examples/components/demo-block.vue
+var demo_block_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"docs-demo-wrapper"},[_c('div',{staticClass:"demo-container",style:({height: _vm.isExpand ? 'auto' : '0'})},[_c('div',{attrs:{"span":"14"}},[_c('div',{staticClass:"docs-demo docs-demo--expand"},[_c('div',{staticClass:"highlight-wrapper"},[_vm._t("highlight")],2)])])]),_vm._v(" "),_c('span',{staticClass:"docs-trans docs-demo-triangle",on:{"click":_vm.toggle}},[_vm._v(_vm._s(_vm.isExpand ? '隐藏代码' : '显示代码'))])])}
 var demo_block_staticRenderFns = []
 var demo_block_esExports = { render: demo_block_render, staticRenderFns: demo_block_staticRenderFns }
 /* harmony default export */ var components_demo_block = (demo_block_esExports);
 // CONCATENATED MODULE: ./examples/components/demo-block.vue
 function demo_block_injectStyle (ssrContext) {
-  __webpack_require__("DGDz")
+  __webpack_require__("skbb")
 }
 var demo_block_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -1048,32 +1053,64 @@ var yjButton_Component = yjButton_normalizeComponent(
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ var actionSheet = ({
   name: 'actionSheet',
   props: {
     show: {
       type: Boolean,
       default: false
+    },
+    //标题
+    title: {
+      type: String,
+      default: ''
+    },
+    actions: {
+      type: Array,
+      default: function _default() {
+        return [{
+          name: '选项一'
+        }, {
+          name: '选项二'
+        }];
+      }
     }
   },
   model: {
     prop: 'show',
     event: 'onShow'
   },
+  mounted: function mounted() {
+    console.log(this.title, 'title111');
+  },
   methods: {
-    closeSheet: function closeSheet() {
+    closeMask: function closeMask() {
+      this.$emit('onShow', false);
+    },
+    selectItem: function selectItem(item) {
+      this.$emit('onSelected', item);
       this.$emit('onShow', false);
     }
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-78f20458","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./packages/actionSheet/src/actionSheet.vue
-var actionSheet_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.show)?_c('div',{staticClass:"actionSheet"},[_c('div',{staticClass:"yj-overlayer",on:{"click":_vm.closeSheet}})]):_vm._e()}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-a078023e","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./packages/actionSheet/src/actionSheet.vue
+var actionSheet_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.show)?_c('div',{staticClass:"actionSheet"},[_c('div',{staticClass:"yj-overlayer",on:{"click":_vm.closeMask}}),_vm._v(" "),_c('div',{staticClass:"action-sheet-box"},[_c('div',{staticClass:"action-sheet-title"},[_vm._t("title",[_c('div',[_vm._v(_vm._s(_vm.title))])])],2),_vm._v(" "),_vm._l((_vm.actions),function(item,index){return _c('div',{key:index,staticClass:"action-sheet-innner",on:{"click":function($event){return _vm.selectItem(item)}}},[_c('div',[_vm._v(_vm._s(item.name))])])})],2)]):_vm._e()}
 var actionSheet_staticRenderFns = []
 var actionSheet_esExports = { render: actionSheet_render, staticRenderFns: actionSheet_staticRenderFns }
 /* harmony default export */ var src_actionSheet = (actionSheet_esExports);
 // CONCATENATED MODULE: ./packages/actionSheet/src/actionSheet.vue
 function actionSheet_injectStyle (ssrContext) {
-  __webpack_require__("/bKv")
+  __webpack_require__("6NPY")
 }
 var actionSheet_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -1143,6 +1180,13 @@ new vue_esm["a" /* default */]({
 
 /***/ }),
 
+/***/ "skbb":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "ysMV":
 /***/ (function(module, exports) {
 
@@ -1151,4 +1195,4 @@ new vue_esm["a" /* default */]({
 /***/ })
 
 },["mUtA"]);
-//# sourceMappingURL=app.427d7f105957913eebe6.js.map
+//# sourceMappingURL=app.ba155639bc48178eed35.js.map
