@@ -2,39 +2,13 @@
 
 ### 基本用法
 ---
-<div class="demon-block">
-  <yj-button @click.native="handlerActionSheet" type="primary" >弹出菜单</yj-button>
-  <div style="width:376px;height:640px;border-radius:20px;overflow: hidden;border:1px solid #000;textAlign:center;position: relative;">
-    这是个iphoneX 哈哈！
-    <action-sheet v-model="show" :title="title" @onSelected="onSelected"></action-sheet>
-  </div>
-</div>
-<script>
-export default {
-   data(){
-     return{
-       show:false,
-       title:'标题'
-     }
-  },
-  methods:{
-    handlerActionSheet(){
-      this.show = !this.show
-    },
-    onSelected(item){
-      alert(item.name)
-    }
-  }
-}
-</script>
 
----
 
-基础用法
-通过v-model控制显示和隐藏
 
 ::: demo
 ```html
+基础用法
+通过v-model控制显示和隐藏 ActionSheet通过actions数组来定义展示的选项，数组的每一项是一个对象，对象属性见文档下方表格
  <div class="demon-block">
   <yj-button @click.native="handlerActionSheet" type="primary">弹出菜单</yj-button>
   <action-sheet v-model="show"></action-sheet>

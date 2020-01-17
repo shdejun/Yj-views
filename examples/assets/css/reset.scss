@@ -325,75 +325,9 @@ th {
 }
 
 /*elementui input前后插槽间距*/
-.el-input-group__append, .el-input-group__prepend{
-	padding: 0 12px;
-}
-.el-input-group__append .el-button, .el-input-group__prepend .el-button{
-	padding: 0 12px;
-}
-.el-input-group__append div.el-select .el-input--suffix .el-input__inner{
-	padding-left:12px;
-	padding-right: 25px;
-}
-.el-input-group__append .el-button, .el-input-group__append .el-select, .el-input-group__prepend .el-button, .el-input-group__prepend .el-select{
-	margin:-10px -12px;
-}
-/* elementui el-tabs增加左间距 */
-.el-tabs .el-tabs__header {
-	margin-bottom: 0;
-}
-.el-tabs .el-tabs__nav-wrap {
-	padding-left: 20px;
+.demon-block{
+    background-color: #fff;
+    box-shadow: 0 8px 12px #ebedf0;
+    min-height: 100px;
 }
 
-/* elementui el-table 表头颜色等 */
-.el-table {
-	border: 1px solid #DDDDDD;
-}
-.el-table th,
-.el-table thead.is-group th  {
-	background-color: #E2E8F4;
-	color: #657BAF;
-}
-.el-table::before {
-	height: 0;
-}
-.el-table tr:last-child td {
-	border-bottom: none;
-}
-/* 遮罩gif */
-.el-icon-loading {
-	font-size: 30px;
-}
-
-/* 表格下红点位置的重置 */
-.el-table .el-badge__content.is-fixed.is-dot {
-	right: 10px;
-	top: 10px;
-}
-
-/* card卡片样式重置 */
-.el-card {
-	border-radius: 0;
-	box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.06);
-}
-.el-card.is-always-shadow {
-	box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.06);
-}
-
-input::placeholder{
-  opacity: 1 !important;
-}
-
-.el-button [class*=" el-icon-"], .el-button [class^=el-icon-]{
-	vertical-align: top;
-}
-.el-badge__content{
-	border: none;	
-}
-
-/*card组件重置*/
-.el-card__header {
-	font-size: 16px;
-    color: #333;
-}

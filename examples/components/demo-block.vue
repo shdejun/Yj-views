@@ -19,7 +19,7 @@
   export default {
     data() {
       return {
-        isExpand: false
+        isExpand: true
       };
     },
     methods: {
@@ -31,18 +31,23 @@
 </script>
 
 <style lang="scss">
+.docs-demo-wrapper{
+  background-color: #fff;
+  box-shadow: 0 8px 12px #ebedf0;
+  min-height: 50px;
+  padding: 20px 0;
+  margin-top: 20px;
+}
   .demo-container {
     transition: max-height .3s ease;
     overflow: hidden;
+  
   }
   .docs-demo {
     width: 100%;
     height: auto;
     box-sizing: border-box;
     font-size: 14px;
-    background-color: #F7F7F7;
-    border: 1px solid #e2ecf4;
-    border-top: none;
     pre code {
       font-family: Consolas,Menlo,Courier,monospace;
       line-height: 22px;

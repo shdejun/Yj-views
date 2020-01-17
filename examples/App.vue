@@ -49,10 +49,12 @@ export default {
   }
   .center-views{
     display: inline-block;
+    vertical-align: top;
     width: calc(100% - 643px)
   }
   .iframe-box{
     display: inline-block;
+    vertical-align: top;
     width: 400px;
     height: 100%;
     .iframe-box-innner{
