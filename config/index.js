@@ -39,7 +39,8 @@ module.exports = {
   build: {
     // Template for index.html
     index: path.resolve(__dirname, '../dist/index.html'),
-
+    iframe:path.resolve(__dirname, '../dist/iframe.html'),
+    iframeDist:path.resolve(__dirname, '../iframe.html'),
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',

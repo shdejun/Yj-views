@@ -54,7 +54,8 @@ function resolve (dir) {
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './examples/main.js'
+    app: './examples/main.js',
+    // iframe:'./examples/iframe.js'
   },
   output: {
     path: config.build.assetsRoot,

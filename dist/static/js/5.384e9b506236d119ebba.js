@@ -1,2 +1,151 @@
-webpackJsonp([5],{"SU/S":function(t,s,a){t.exports=a("a7w1")},a7w1:function(t,s,a){"use strict";Object.defineProperty(s,"__esModule",{value:!0});var e=(a("YY9M"),{data:function(){return{show:!1,title:"标题"}},methods:{handlerActionSheet:function(){this.show=!this.show},onSelected:function(t){alert(t.name)}}}),r=function(){var t=this,s=t.$createElement,a=t._self._c||s;return a("section",[a("h3",[t._v("基本用法")]),t._v(" "),a("hr"),t._v(" "),a("div",{staticClass:"demon-block"},[a("yj-button",{attrs:{type:"primary"},nativeOn:{click:function(s){return t.handlerActionSheet(s)}}},[t._v("弹出菜单")]),t._v(" "),a("div",{staticStyle:{width:"376px",height:"640px","border-radius":"20px",overflow:"hidden",border:"1px solid #000",textAlign:"center",position:"relative"}},[t._v("\n    这是个iphoneX 哈哈！\n    "),a("action-sheet",{attrs:{title:t.title},on:{onSelected:t.onSelected},model:{value:t.show,callback:function(s){t.show=s},expression:"show"}})],1)],1),t._v(" "),a("hr"),t._v(" "),a("p",[t._v("基础用法\n通过v-model控制显示和隐藏")]),t._v(" "),a("demo-block",[a("div",{attrs:{slot:"desc"},slot:"desc"},[a("div",{staticClass:"demon-block"},[a("yj-button",{attrs:{type:"primary"},nativeOn:{click:function(s){return t.handlerActionSheet(s)}}},[t._v("弹出菜单")]),t._v(" "),a("action-sheet",{model:{value:t.show,callback:function(s){t.show=s},expression:"show"}})],1)]),a("div",{attrs:{slot:"highlight"},slot:"highlight"},[a("pre",{pre:!0},[a("code",{pre:!0,attrs:{"v-pre":"",class:"language-html"}},[t._v(" "),a("span",{pre:!0,attrs:{class:"hljs-tag"}},[t._v("<"),a("span",{pre:!0,attrs:{class:"hljs-name"}},[t._v("div")]),t._v(" "),a("span",{pre:!0,attrs:{class:"hljs-attr"}},[t._v("class")]),t._v("="),a("span",{pre:!0,attrs:{class:"hljs-string"}},[t._v('"demon-block"')]),t._v(">")]),t._v("\n  "),a("span",{pre:!0,attrs:{class:"hljs-tag"}},[t._v("<"),a("span",{pre:!0,attrs:{class:"hljs-name"}},[t._v("yj-button")]),t._v(" "),a("span",{pre:!0,attrs:{class:"hljs-attr"}},[t._v("@click.native")]),t._v("="),a("span",{pre:!0,attrs:{class:"hljs-string"}},[t._v('"handlerActionSheet"')]),t._v(" "),a("span",{pre:!0,attrs:{class:"hljs-attr"}},[t._v("type")]),t._v("="),a("span",{pre:!0,attrs:{class:"hljs-string"}},[t._v('"primary"')]),t._v(">")]),t._v("弹出菜单"),a("span",{pre:!0,attrs:{class:"hljs-tag"}},[t._v("</"),a("span",{pre:!0,attrs:{class:"hljs-name"}},[t._v("yj-button")]),t._v(">")]),t._v("\n  "),a("span",{pre:!0,attrs:{class:"hljs-tag"}},[t._v("<"),a("span",{pre:!0,attrs:{class:"hljs-name"}},[t._v("action-sheet")]),t._v(" "),a("span",{pre:!0,attrs:{class:"hljs-attr"}},[t._v("v-model")]),t._v("="),a("span",{pre:!0,attrs:{class:"hljs-string"}},[t._v('"show"')]),t._v(">")]),a("span",{pre:!0,attrs:{class:"hljs-tag"}},[t._v("</"),a("span",{pre:!0,attrs:{class:"hljs-name"}},[t._v("action-sheet")]),t._v(">")]),t._v("\n"),a("span",{pre:!0,attrs:{class:"hljs-tag"}},[t._v("</"),a("span",{pre:!0,attrs:{class:"hljs-name"}},[t._v("div")]),t._v(">")]),t._v("\n"),a("span",{pre:!0,attrs:{class:"hljs-tag"}},[t._v("<"),a("span",{pre:!0,attrs:{class:"hljs-name"}},[t._v("script")]),t._v(">")]),a("span",{pre:!0,attrs:{class:"javascript"}},[t._v("\n"),a("span",{pre:!0,attrs:{class:"hljs-keyword"}},[t._v("export")]),t._v(" "),a("span",{pre:!0,attrs:{class:"hljs-keyword"}},[t._v("default")]),t._v(" {\n   data(){\n     "),a("span",{pre:!0,attrs:{class:"hljs-keyword"}},[t._v("return")]),t._v("{\n       "),a("span",{pre:!0,attrs:{class:"hljs-attr"}},[t._v("show")]),t._v(":"),a("span",{pre:!0,attrs:{class:"hljs-literal"}},[t._v("false")]),t._v("\n     }\n  },\n  "),a("span",{pre:!0,attrs:{class:"hljs-attr"}},[t._v("methods")]),t._v(":{\n    handlerActionSheet(){\n      "),a("span",{pre:!0,attrs:{class:"hljs-keyword"}},[t._v("this")]),t._v(".show = "),a("span",{pre:!0,attrs:{class:"hljs-literal"}},[t._v("true")]),t._v("\n    }\n  }\n}\n")]),a("span",{pre:!0,attrs:{class:"hljs-tag"}},[t._v("</"),a("span",{pre:!0,attrs:{class:"hljs-name"}},[t._v("script")]),t._v(">")]),t._v("\n\n")])])])]),t._v(" "),a("h3",[t._v("prop")]),t._v(" "),t._m(0),t._v(" "),a("h3",[t._v("Event")]),t._v(" "),t._m(1)],1)},n=[function(){var t=this,s=t.$createElement,a=t._self._c||s;return a("table",{staticClass:"table"},[a("thead",[a("tr",[a("th",[t._v("参数")]),t._v(" "),a("th",[t._v("说明")]),t._v(" "),a("th",[t._v("类型")]),t._v(" "),a("th",[t._v("可选值")]),t._v(" "),a("th",[t._v("默认值")])])]),t._v(" "),a("tbody",[a("tr",[a("td",[t._v("type")]),t._v(" "),a("td",[t._v("类型，可选值为 primary info warning danger")]),t._v(" "),a("td",[t._v("String")]),t._v(" "),a("td",[t._v("—")]),t._v(" "),a("td",[t._v("default")])])])])},function(){var t=this,s=t.$createElement,a=t._self._c||s;return a("table",{staticClass:"table"},[a("thead",[a("tr",[a("th",[t._v("事件名称")]),t._v(" "),a("th",[t._v("说明")]),t._v(" "),a("th",[t._v("回调参数")])])]),t._v(" "),a("tbody",[a("tr",[a("td",[t._v("onclick")]),t._v(" "),a("td",[t._v("点击按钮时触发")]),t._v(" "),a("td",[t._v("—")])])])])}],l={render:r,staticRenderFns:n},v=l,_=a("VU/8"),c=_(e,v,!1,null,null,null);s.default=c.exports}});
+webpackJsonp([5],{
+
+/***/ "SU/S":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("a7w1");
+
+/***/ }),
+
+/***/ "a7w1":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.function.name.js
+var es_function_name = __webpack_require__("YY9M");
+var es_function_name_default = /*#__PURE__*/__webpack_require__.n(es_function_name);
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./node_modules/vue-markdown-loader/lib/markdown-compiler.js?raw!./examples/docs/actionSheet.md
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var actionSheet = ({
+  data: function data() {
+    return {
+      show: false,
+      title: '标题'
+    };
+  },
+  methods: {
+    handlerActionSheet: function handlerActionSheet() {
+      this.show = !this.show;
+    },
+    onSelected: function onSelected(item) {
+      alert(item.name);
+    }
+  }
+});
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-4f027d61","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./node_modules/vue-markdown-loader/lib/markdown-compiler.js?raw!./examples/docs/actionSheet.md
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',[_c('h3',[_vm._v("基本用法")]),_vm._v(" "),_c('hr'),_vm._v(" "),_c('div',{staticClass:"demon-block"},[_c('yj-button',{attrs:{"type":"primary"},nativeOn:{"click":function($event){return _vm.handlerActionSheet($event)}}},[_vm._v("弹出菜单")]),_vm._v(" "),_c('div',{staticStyle:{"width":"376px","height":"640px","border-radius":"20px","overflow":"hidden","border":"1px solid #000","textAlign":"center","position":"relative"}},[_vm._v("\n    这是个iphoneX 哈哈！\n    "),_c('action-sheet',{attrs:{"title":_vm.title},on:{"onSelected":_vm.onSelected},model:{value:(_vm.show),callback:function ($$v) {_vm.show=$$v},expression:"show"}})],1)],1),_vm._v(" "),_c('hr'),_vm._v(" "),_c('p',[_vm._v("基础用法\n通过v-model控制显示和隐藏")]),_vm._v(" "),_c('demo-block',[_c('div',{attrs:{"slot":"desc"},slot:"desc"},[_c('div',{staticClass:"demon-block"},[_c('yj-button',{attrs:{"type":"primary"},nativeOn:{"click":function($event){return _vm.handlerActionSheet($event)}}},[_vm._v("弹出菜单")]),_vm._v(" "),_c('action-sheet',{model:{value:(_vm.show),callback:function ($$v) {_vm.show=$$v},expression:"show"}})],1)]),_c('div',{attrs:{"slot":"highlight"},slot:"highlight"},[_c('pre',{pre:true},[_c('code',{pre:true,attrs:{"v-pre":"","class":"language-html"}},[_vm._v(" "),_c('span',{pre:true,attrs:{"class":"hljs-tag"}},[_vm._v("<"),_c('span',{pre:true,attrs:{"class":"hljs-name"}},[_vm._v("div")]),_vm._v(" "),_c('span',{pre:true,attrs:{"class":"hljs-attr"}},[_vm._v("class")]),_vm._v("="),_c('span',{pre:true,attrs:{"class":"hljs-string"}},[_vm._v("\"demon-block\"")]),_vm._v(">")]),_vm._v("\n  "),_c('span',{pre:true,attrs:{"class":"hljs-tag"}},[_vm._v("<"),_c('span',{pre:true,attrs:{"class":"hljs-name"}},[_vm._v("yj-button")]),_vm._v(" "),_c('span',{pre:true,attrs:{"class":"hljs-attr"}},[_vm._v("@click.native")]),_vm._v("="),_c('span',{pre:true,attrs:{"class":"hljs-string"}},[_vm._v("\"handlerActionSheet\"")]),_vm._v(" "),_c('span',{pre:true,attrs:{"class":"hljs-attr"}},[_vm._v("type")]),_vm._v("="),_c('span',{pre:true,attrs:{"class":"hljs-string"}},[_vm._v("\"primary\"")]),_vm._v(">")]),_vm._v("弹出菜单"),_c('span',{pre:true,attrs:{"class":"hljs-tag"}},[_vm._v("</"),_c('span',{pre:true,attrs:{"class":"hljs-name"}},[_vm._v("yj-button")]),_vm._v(">")]),_vm._v("\n  "),_c('span',{pre:true,attrs:{"class":"hljs-tag"}},[_vm._v("<"),_c('span',{pre:true,attrs:{"class":"hljs-name"}},[_vm._v("action-sheet")]),_vm._v(" "),_c('span',{pre:true,attrs:{"class":"hljs-attr"}},[_vm._v("v-model")]),_vm._v("="),_c('span',{pre:true,attrs:{"class":"hljs-string"}},[_vm._v("\"show\"")]),_vm._v(">")]),_c('span',{pre:true,attrs:{"class":"hljs-tag"}},[_vm._v("</"),_c('span',{pre:true,attrs:{"class":"hljs-name"}},[_vm._v("action-sheet")]),_vm._v(">")]),_vm._v("\n"),_c('span',{pre:true,attrs:{"class":"hljs-tag"}},[_vm._v("</"),_c('span',{pre:true,attrs:{"class":"hljs-name"}},[_vm._v("div")]),_vm._v(">")]),_vm._v("\n"),_c('span',{pre:true,attrs:{"class":"hljs-tag"}},[_vm._v("<"),_c('span',{pre:true,attrs:{"class":"hljs-name"}},[_vm._v("script")]),_vm._v(">")]),_c('span',{pre:true,attrs:{"class":"javascript"}},[_vm._v("\n"),_c('span',{pre:true,attrs:{"class":"hljs-keyword"}},[_vm._v("export")]),_vm._v(" "),_c('span',{pre:true,attrs:{"class":"hljs-keyword"}},[_vm._v("default")]),_vm._v(" {\n   data(){\n     "),_c('span',{pre:true,attrs:{"class":"hljs-keyword"}},[_vm._v("return")]),_vm._v("{\n       "),_c('span',{pre:true,attrs:{"class":"hljs-attr"}},[_vm._v("show")]),_vm._v(":"),_c('span',{pre:true,attrs:{"class":"hljs-literal"}},[_vm._v("false")]),_vm._v("\n     }\n  },\n  "),_c('span',{pre:true,attrs:{"class":"hljs-attr"}},[_vm._v("methods")]),_vm._v(":{\n    handlerActionSheet(){\n      "),_c('span',{pre:true,attrs:{"class":"hljs-keyword"}},[_vm._v("this")]),_vm._v(".show = "),_c('span',{pre:true,attrs:{"class":"hljs-literal"}},[_vm._v("true")]),_vm._v("\n    }\n  }\n}\n")]),_c('span',{pre:true,attrs:{"class":"hljs-tag"}},[_vm._v("</"),_c('span',{pre:true,attrs:{"class":"hljs-name"}},[_vm._v("script")]),_vm._v(">")]),_vm._v("\n\n")])])])]),_vm._v(" "),_c('h3',[_vm._v("prop")]),_vm._v(" "),_vm._m(0),_vm._v(" "),_c('h3',[_vm._v("Event")]),_vm._v(" "),_vm._m(1)],1)}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('table',{staticClass:"table"},[_c('thead',[_c('tr',[_c('th',[_vm._v("参数")]),_vm._v(" "),_c('th',[_vm._v("说明")]),_vm._v(" "),_c('th',[_vm._v("类型")]),_vm._v(" "),_c('th',[_vm._v("可选值")]),_vm._v(" "),_c('th',[_vm._v("默认值")])])]),_vm._v(" "),_c('tbody',[_c('tr',[_c('td',[_vm._v("type")]),_vm._v(" "),_c('td',[_vm._v("类型，可选值为 primary info warning danger")]),_vm._v(" "),_c('td',[_vm._v("String")]),_vm._v(" "),_c('td',[_vm._v("—")]),_vm._v(" "),_c('td',[_vm._v("default")])])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('table',{staticClass:"table"},[_c('thead',[_c('tr',[_c('th',[_vm._v("事件名称")]),_vm._v(" "),_c('th',[_vm._v("说明")]),_vm._v(" "),_c('th',[_vm._v("回调参数")])])]),_vm._v(" "),_c('tbody',[_c('tr',[_c('td',[_vm._v("onclick")]),_vm._v(" "),_c('td',[_vm._v("点击按钮时触发")]),_vm._v(" "),_c('td',[_vm._v("—")])])])])}]
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ var docs_actionSheet = (esExports);
+// CONCATENATED MODULE: ./node_modules/vue-loader!./node_modules/vue-markdown-loader/lib/markdown-compiler.js?raw!./examples/docs/actionSheet.md
+var normalizeComponent = __webpack_require__("VU/8")
+/* script */
+
+
+/* template */
+
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  actionSheet,
+  docs_actionSheet,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+
+/* harmony default export */ var markdown_compilerraw_examples_docs_actionSheet = __webpack_exports__["default"] = (Component.exports);
+
+
+/***/ })
+
+});
 //# sourceMappingURL=5.384e9b506236d119ebba.js.map
