@@ -5,7 +5,7 @@
     <router-view class="center-views"/>
     <div class="iframe-box">
         <div class="iframe-box-innner">
-          <iframe :src="`https://memory2008.github.io/iframe/dist/#${route}`" frameborder="0" width="100%" height="100%"></iframe>
+          <iframe :src="`https://shdejun.github.io/iframe/dist/#${route}`" frameborder="0" width="100%" height="100%"></iframe>
         </div>
     </div>
   </div>
