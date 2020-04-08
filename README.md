@@ -10,7 +10,7 @@
 # yjView
 
 `yjView` 是一款基于 `Vue.js 2.0` 的前端 UI 组件库，主要用于快速开发 PC 网站中后台产品
-//[演示地址](https://memory2008.github.io/Yj-views/dist/)
+//[演示地址](https://shdejun.github.io/Yj-views/dist/)
 
 <p align="center">
   <a href="https://github.com/feross/standard">
